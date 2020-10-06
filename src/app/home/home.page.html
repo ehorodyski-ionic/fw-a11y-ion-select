@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Blank </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,8 +11,28 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <section>
+    <ol>
+      <li>Activate screenreader</li>
+      <li>Select an item from the select: Selected value is not announced</li>
+      <li>Focus another element on the screen</li>
+      <li>
+        Select another value from the select: Previous value is announced
+        instead of the current one
+      </li>
+    </ol>
+    <div style="position: relative">
+      <ion-select
+        [(ngModel)]="selectedValue"
+        okText="Okay"
+        interface="action-sheet"
+        cancelText="Dismiss"
+      >
+        <ion-select-option value="brown">Brown</ion-select-option>
+        <ion-select-option value="blonde">Blonde</ion-select-option>
+        <ion-select-option value="black">Black</ion-select-option>
+        <ion-select-option value="red">Red</ion-select-option>
+      </ion-select>
+    </div>
+  </section>
 </ion-content>
