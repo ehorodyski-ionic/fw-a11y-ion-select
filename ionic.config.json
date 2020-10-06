@@ -1,0 +1,7 @@
+{
+  "name": "fw-a11y-select-options",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
